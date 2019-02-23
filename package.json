@@ -2,7 +2,7 @@
   "name": "r-lsp",
   "displayName": "R LSP Client",
   "description": "R language support for VS Code, powered by the R Language Server Protocol.",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "license": "SEE LICENSE IN LICENSE",
   "publisher": "REditorSupport",
   "icon": "images/Rlogo.png",
@@ -40,15 +40,20 @@
       "type": "object",
       "title": "R",
       "properties": {
-        "R.LSP.Path": {
+        "r.languageserver.path": {
           "type": "string",
           "default": "",
-          "description": "Path to R binary for Language Server"
+          "description": "Path to R binary for launching Language Server"
         },
-        "R.LSP.Debug": {
+        "r.languageserver.debug": {
           "type": "boolean",
           "default": false,
-          "description": "Debug R LSP"
+          "description": "Debug R Language Server"
+        },
+        "r.languageserver.diagnostics": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Diagnostics"
         }
       }
     }
